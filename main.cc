@@ -30,9 +30,12 @@ int main() {
 		case_name.push_back(casevalue);
 	}
 	int userVal = 0;
-	cout << "Please enter a briefcase to open:" << endl;
+
 	while (true) {
-		cin >> userVal; // briefcase to open
+		cout << "Please enter a briefcase to open:" << endl;
+
+		cin >> userVal; // briefcase to ope
+		if (!cin) die();
 		int avg = 0;
 
 		if (userVal == -1) {
