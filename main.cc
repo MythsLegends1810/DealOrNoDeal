@@ -23,8 +23,6 @@ int main() {
 	if (N < 2) die();
 	vector<int> case_name;
 	vector<int> choices;
-
-
 	for (int i = 0; i < N; i++) {
 		int casevalue = 0; // dollar amount
 		case_file >> casevalue;
@@ -47,7 +45,6 @@ int main() {
 
 			int total = 0;
 			int count = 0;
-
 			for (int i = 0; i < case_name.size(); i++) {
 				int Casevalue = case_name.at(i);
 				total += Casevalue;
@@ -56,23 +53,17 @@ int main() {
 
 			if (count == 1) {
 				for (int i = 0; i < case_name.size(); i++) {
-
 					if (case_name.at(i) != 0) {
 						cout << "You won " << case_name.at(i) << " dollars" << endl;
 						return 0;
 					}
 				}
-
 			}
-
-
 
 			if (count > 0) {
 				avg = total / count;
 			}
-
 			cout << "I will offer you " << avg << " dollars to walk away" << endl;
 		}
-
 	}
 }
