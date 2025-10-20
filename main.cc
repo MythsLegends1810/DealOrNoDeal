@@ -21,20 +21,21 @@ int main() {
 	vector<int> choices;
 
 	while (true) {
-	int userInput = 0;
-	case_file >> userInput;
-	if (!case_file) break;
-	cases.push_back(userInput);
-	
-}
+		int userInput = 0;
+		case_file >> userInput;
+		if (!case_file) break;
+		case_name.push_back(userInput);
+
+	}
 	int case_sum = 0;
 	int avg_won = 0;
 	int userVal = 0;
 	while (true) {
 		cout << "Please enter a briefcase to open" << endl;
 		cin >> userVal;
+		if (!cin) die();
 	}
-		
+
 //Next...
 //Do you remember how to open a file? check
 //How to check to see if the file opened successfully? Check
