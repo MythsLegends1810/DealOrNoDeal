@@ -32,6 +32,7 @@ int main() {
 	int userVal = 0;
 	while (true) {
 		cout << "Please enter a briefcase to open" << endl;
+		cin >> userVal;
 	}
 		
 //Next...
