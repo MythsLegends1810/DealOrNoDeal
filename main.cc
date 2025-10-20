@@ -36,7 +36,7 @@ int main() {
 		int avg = 0;
 
 		if (userVal == -1) {
-			cout << " you won " << avg << " dollars" << endl;
+			cout << "You won " << avg << " dollars" << endl;
 
 			if (userVal <  0 || userVal >=  case_name.size())  die();
 			if (case_name.at(userVal) == 0) die();
