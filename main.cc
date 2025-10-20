@@ -21,37 +21,19 @@ int main() {
 	vector<int> choices;
 
 	while (true) {
-	int N = 0;
-	case_file >> N;
+	int userInput = 0;
+	case_file >> userInput;
 	if (!case_file) break;
-	if (N < 2) die();
+	cases.push_back(userInput);
+	
 }
-
-	/*(for (int i = 0; i < N; i++) {
-		int userInput = 0;
-		case_file >> userInput;
-		case_name.push_back(userInput);
-	} */
-
+	int case_sum = 0;
+	int avg_won = 0;
 	int userVal = 0;
-	cout << "Please enter a briefcase to open" << endl;
 	while (true) {
-		cin >> userVal;
-		if (!case_file) break;
-		cases.push_back(userVal);
-		//	for (int i = 0; i < case_name.size(); i++)
-		if (userVal > 0 && userVal <= case_name.size())
-			cout << "that case contained " << case_name.at() << endl;
-		if (userVal == -1) break;
+		cout << "Please enter a briefcase to open" << endl;
 	}
-
-
-	int sum = 0;
-	int avg = 0;
-	int size = case_name.size();
-	while (true) {i
-	cout << "You won " << dollars < " amount!" << endl;
-		}
+		
 //Next...
 //Do you remember how to open a file? check
 //How to check to see if the file opened successfully? Check
