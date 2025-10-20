@@ -56,10 +56,10 @@ int main() {
 
 			if (count == 1) {
 				for (int i = 0; i < case_name.size(); i++) {
-           
+
 					if (case_name.at(i) != 0) {
-						cout << " you won " << case_name.at(i) << " dollars" << endl;
-                             return 0;
+						cout << "You won " << case_name.at(i) << " dollars" << endl;
+						return 0;
 					}
 				}
 
