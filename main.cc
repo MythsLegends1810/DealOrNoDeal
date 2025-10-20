@@ -35,48 +35,51 @@ int main() {
 	cout << "Please enter a briefcase to open: " << endl;
 	while (true) {
 		cin >> userVal; // briefcase to open
-
-
-		if (userVal <  0 || userVal >=  case_name.size())  die();
-		if (case_name.at(userVal) == 0) die();
-		cout << "That briefcase held " << case_name.at(userVal - 1) << " dollars" <<  endl;
-		case_name.at(userVal) = 0; // case is now empty after read
-
-		int total = 0;
-		int count = 0;
 		int avg = 0;
-		for (int i = 0; i < case_name.size(); i++) {
-			int Casevalue = case_name.at(i);
-			total += Casevalue;
-			count ++;
-		}
-
-		if (count == 1) {
-			for (int i = 0; i < case_name.size(); i++) {
-				if (case_name.at(i) != 0) {
-					cout << " you won " << case_name.at(i) << " dollars" << endl;
-
-				}
-			}
-
-		}
-
-
-
-
-
-		if (count > 0) {
-			avg = total / count;
-		}
-
-		cout << "I will offer you " << avg << " dollars to walk away" << endl;
 
 		if (userVal == -1) {
 			cout << " you won " << avg << " dollars" << endl;
 
+			if (userVal <  0 || userVal >=  case_name.size())  die();
+			if (case_name.at(userVal) == 0) die();
+			cout << "That briefcase held " << case_name.at(userVal) << " dollars" <<  endl;
+			case_name.at(userVal) = 0; // case is now empty after read
+
+			int total = 0;
+			int count = 0;
+
+			for (int i = 0; i < case_name.size(); i++) {
+				int Casevalue = case_name.at(i);
+				total += Casevalue;
+				count ++;
+			}
+
+			if (count == 1) {
+				for (int i = 0; i < case_name.size(); i++) {
+					if (case_name.at(i) != 0) {
+						cout << " you won " << case_name.at(i) << " dollars" << endl;
+
+					}
+				}
+
+			}
 
 
-		}
+
+
+
+
+
+			if (count > 0) {
+				avg = total / count;
+			}
+
+			cout << "I will offer you " << avg << " dollars to walk away" << endl;
+
+
+
+
+
 
 //Next...
 //Do you remember how to open a file?
@@ -86,6 +89,7 @@ int main() {
 
 
 
+		}
 
 	}
 }
