@@ -32,7 +32,7 @@ int main() {
 		case_name.push_back(casevalue);
 	}
 	int userVal = 0;
-	cout << "Please enter a briefcase to open: " << endl;
+	cout << "Please enter a briefcase to open:" << endl;
 	while (true) {
 		cin >> userVal; // briefcase to open
 		int avg = 0;
@@ -67,29 +67,11 @@ int main() {
 
 
 
-
-
-
-
 			if (count > 0) {
 				avg = total / count;
 			}
 
 			cout << "I will offer you " << avg << " dollars to walk away" << endl;
-
-
-
-
-
-
-//Next...
-//Do you remember how to open a file?
-//How to check to see if the file opened successfully?
-//How do you store data in a vector?
-//How do you average values across a vector?
-
-
-
 		}
 
 	}
